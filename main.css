@@ -1214,6 +1214,7 @@ nav>.container>a {
     margin: 20px auto 0 !important;
     display: flex !important;
     justify-content: center;
+    font-size: 13.5px;
   }
 
   .project-text h3 {
@@ -1990,7 +1991,7 @@ body {
     width: 100%;
     max-width: 418px;
     height: 148px;
-    margin-left: auto !important;
+    margin-left: 20px !important;
     margin-right: auto !important;
   }
 
@@ -5129,7 +5130,7 @@ body {
 
     /* --- CTA SECTION --- */
     .cta-section {
-      width: 100% !important;
+      width: 90% !important;
       height: auto !important;
       padding: 1.5rem 1rem !important;
       border-radius: 15px;
@@ -8385,7 +8386,7 @@ body {
 
 
   .ux-header .ux-badg {
-    width: 100px !important;
+    width: 75px !important;
     height: 40px !important;
   }
 
@@ -9017,8 +9018,8 @@ body {
 
   /* Universal Mobile Text and Section fixes */
   section {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 38px !important;
+    padding-right: 45px !important;
   }
 
   h1,
@@ -9103,7 +9104,7 @@ img {
 
 /* 2 ── CTA section: remove fixed pixel width/height */
 .cta-section {
-  width: 100% !important;
+  width: 90% !important;
   max-width: 1240px !important;
   height: auto !important;
   box-sizing: border-box;
@@ -9241,7 +9242,7 @@ img {
 
   /* project-container on index.html hero */
   .project-container {
-    width: 100% !important;
+    width: 75% !important;
     height: auto !important;
     overflow: visible !important;
   }
@@ -9500,8 +9501,8 @@ h5 {
   body[class] .innovation-badge-exact,
   body .innovation-badge-exact,
   .innovation-badge-exact {
-    font-size: 11px !important;
-    padding: 3px 12px !important;
+    font-size: 9px !important;
+    padding: 15px 12px !important;
     margin-top: 5px !important;
     width: auto !important;
     height: auto !important;

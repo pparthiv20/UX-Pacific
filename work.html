@@ -165,7 +165,11 @@
       .work-grid { grid-template-columns: 1fr; }
       .work-card--featured { grid-column: span 1; }
       .work-card--featured .work-card__image { aspect-ratio: 16/10; }
-      .filter-bar { max-width: calc(100vw - 32px); }
+      .filter-bar {
+        max-width: 360px !important;
+        font-size: 6px !important;
+        padding: 10px;
+    }
     }
   </style>
   </head>
@@ -245,8 +249,11 @@
     </section>
 
     <!-- Work Cards Section -->
+
     <section class="projects-section">
+   
       <div class="projects-container">
+        
 
         <!-- Filter Bar -->
         <div class="filter-bar" role="tablist" aria-label="Filter work by category">
@@ -297,7 +304,7 @@
 
           <div class="work-card" data-category="case-studies">
             <div class="work-card__image">
-              <img src="img/project1.webp" alt="Survey Pacific Case Study" loading="lazy" />
+              <img src="img/ikea.png" alt="Survey Pacific Case Study" loading="lazy" />
               <div class="work-card__overlay">
                 <a href="https://www.behance.net/gallery/207413041/Case-Study-on-Market-Research-FirmSurvey-Pacific" class="work-card__view-btn" target="_blank" rel="noopener noreferrer">View Case Study →</a>
               </div>
@@ -307,16 +314,17 @@
                 <span class="work-tag">Case Study</span>
                 <span class="work-tag">Web</span>
               </div>
-              <h3 class="work-card__title">Survey Pacific</h3>
-              <p class="work-card__desc">Revamped the UI/UX through deep heuristic evaluation, delivering a streamlined, user-friendly experience for a global research audience.</p>
+              <h3 class="work-card__title">IKEA web design</h3>
+              <p class="work-card__desc">Reimagining IKEA’s digital journey with clarity, structure, and seamless usability.
+Designed to enhance browsing, inspire customers, and improve conversion flow.</p>
             </div>
           </div>
 
-          <div class="work-card" data-category="case-studies projects">
+               <div class="work-card" data-category="case-studies">
             <div class="work-card__image">
-              <img src="img/milan.webp" alt="Detailed UX Audit for Milan Pipe" loading="lazy" />
+              <img src="img/auria.png" alt="Survey Pacific Case Study" loading="lazy" />
               <div class="work-card__overlay">
-                <a href="https://www.behance.net/gallery/235343557/Detailed-UX-Audit-for-Milan-Pipe" class="work-card__view-btn" target="_blank" rel="noopener noreferrer">View Details →</a>
+                <a href="https://www.behance.net/gallery/207413041/Case-Study-on-Market-Research-FirmSurvey-Pacific" class="work-card__view-btn" target="_blank" rel="noopener noreferrer">View Case Study →</a>
               </div>
             </div>
             <div class="work-card__body">
@@ -324,8 +332,46 @@
                 <span class="work-tag">Case Study</span>
                 <span class="work-tag">Web</span>
               </div>
-              <h3 class="work-card__title">Milan Pipe</h3>
-              <p class="work-card__desc">A thorough UX audit revealing key friction points and opportunities, helping Milan Pipe achieve a more intuitive B2B digital experience.</p>
+              <h3 class="work-card__title">Auria Branding Project</h3>
+              <p class="work-card__desc">Creating a refined brand identity that reflects Auria’s vision and values.
+Designed with purposeful visuals, balanced typography, and a cohesive brand system.</p>
+            </div>
+
+          </div>
+              <div class="work-card" data-category="case-studies">
+            <div class="work-card__image">
+              <img src="img/absolut.png" alt="Survey Pacific Case Study" loading="lazy" />
+              <div class="work-card__overlay">
+                <a href="https://www.behance.net/gallery/207413041/Case-Study-on-Market-Research-FirmSurvey-Pacific" class="work-card__view-btn" target="_blank" rel="noopener noreferrer">View Case Study →</a>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span class="work-tag">Case Study</span>
+                <span class="work-tag">Web</span>
+              </div>
+              <h3 class="work-card__title">Absolut Website Design</h3>
+              <p class="work-card__desc">A showcase of our strategic design solutions crafted for real-world impact.
+Each project reflects our commitment to clarity, creativity, and measurable results</p>
+            </div>
+          </div>
+
+          <div class="work-card" data-category="case-studies">
+            <div class="work-card__image">
+              <img src="img/lays.png" alt="Detailed UX Audit for Milan Pipe" loading="lazy" />
+              <div class="work-card__overlay">
+                <a href="https://www.behance.net/gallery/235343557/Detailed-UX-Audit-for-Milan-Pipe" class="work-card__view-btn" target="_blank" rel="noopener noreferrer">View Details →</a>
+              </div>
+            </div>
+            <div class="work-card__body">
+              <div class="work-card__tags">
+                <span class="work-tag">UX Audit</span>
+                <span class="work-tag">Web</span>
+              </div>
+              <h3 class="work-card__title">Lay’s Web Redesign</h3>
+              <p class="work-card__desc">A modern website redesign crafted to enhance brand energy and user engagement.
+Focused on bold visuals, smooth navigation, and a fresh digital experience.
+</p>
             </div>
           </div>
 
