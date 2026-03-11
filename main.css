@@ -90,7 +90,7 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
-  filter: brightness(0.55) blur(1.5px);
+  /* filter: brightness(0.55) blur(1.5px) !important; */
 }
 
 
@@ -5249,6 +5249,15 @@ body {
     /* optional, can remove */
   }
 
+  .gallery-container img,
+  .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* filter: brightness(0.55) blur(1.5px) !important; */
+  }
+
   .animated-img {
     position: absolute;
     top: 0;
@@ -6105,13 +6114,12 @@ body {
     z-index: 1;
   }
 
-  .gallery-container img,
-  .img1 {
+  .gallery-container img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
-    filter: brightness(0.55) blur(1.5px);
+    /* filter: brightness(0.55) blur(1.5px) !important; */
   }
 
 
@@ -6160,6 +6168,15 @@ body {
     z-index: 1;
     border-radius: 12px;
 
+  }
+
+  .gallery-container img,
+  .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* filter: brightness(0.55) blur(1.5px) !important; */
   }
 
   .animated-img {
@@ -6621,6 +6638,15 @@ body {
     z-index: 1;
     border-radius: 0px;
     /* optional, can remove */
+  }
+
+  .gallery-container img,
+  .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* filter: brightness(0.55) blur(1.5px) !important; */
   }
 
   .animated-img {
@@ -7351,6 +7377,15 @@ body {
     overflow: hidden;
     z-index: 1;
     border-radius: 0px;
+  }
+
+  .gallery-container img,
+  .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* filter: brightness(0.55) blur(1.5px) !important; */
   }
 
   .animated-img {
@@ -8161,6 +8196,15 @@ body {
     width: 100%;
     overflow: hidden;
     z-index: 1;
+  }
+
+  .gallery-container img,
+  .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* filter: brightness(0.55) blur(1.5px) !important; */
   }
 
   .animated-img {

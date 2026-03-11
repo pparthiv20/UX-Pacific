@@ -21,7 +21,7 @@ $currentPage  = 'home';
       <div class="custom-cursor"></div>
       <section class="hero">
         <h1 id="heading">
-          WE CRAFT UX THAT MAKES THEM
+          WE CRAFT UX THAT MAKES THEM 
           <br />
           <span style="font-weight: 200">
             STAY, ENGAGE,
@@ -123,8 +123,8 @@ $currentPage  = 'home';
         <div class="col-6 col-md-3"><div class="service-pill-box">Software Development</div></div>
         <div class="col-6 col-md-3"><div class="service-pill-box">Mobile, SaaS &amp; eCommerce UX</div></div>
         <div class="col-6 col-md-3"><div class="service-pill-box">Emerging Tech UX</div></div>
-        <div class="col-6 col-md-3"><div class="service-pill-box">UX Content &amp; Microinteractions</div></div>
-        <div class="col-6 col-md-3"><div class="text-center mt-5"><a class="view-more" href="services.php"> View More &rarr; </a></div></div>
+        <div class="col-6 col-md-3"><div class="service-pill-box">UX Content </div></div>
+        <div class="col-6 col-md-3"><div class="text-center mt-5"><a class="view-more" href="service.php"> View More &rarr; </a></div></div>
       </div>
     </div>
 
@@ -161,7 +161,7 @@ $currentPage  = 'home';
       <p class="description">Unlock exclusive networking and learning opportunities across our Ambassador Club and Academy. Take the next step in your UX career with a supportive community and hands-on resources.</p>
       <div class="cards">
         <a href="https://club.uxpacific.com/" style="text-decoration:none" target="_blank">
-          <div class="card"><h1 class="text-white" style="font-size:1.7rem">Ambassador Club</h1><span class="ux-line"> </span><p>Connect, share, and grow with peers in our exclusive ambassador community.</p><span class="arrow"> </span></div>
+          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UX Shop</h1><span class="ux-line"> </span><p>Connect, share, and grow with peers in our exclusive ambassador community.</p><span class="arrow"> </span></div>
         </a>
         <a href="https://academy.uxpacific.com/" style="text-decoration:none" target="_blank">
           <div class="card"><h1 class="text-white" style="font-size:1.7rem">UX Academy</h1><span class="ux-line"> </span><p>Advance your skills through curated booklets and hands-on learning experiences through our workshops.</p><span class="arrow"> </span></div>

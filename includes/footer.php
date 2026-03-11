@@ -25,7 +25,7 @@
         <ul class="q_link">
           <li><a href="index.php">Home</a></li>
           <li><a href="about.php">About Us</a></li>
-          <li><a href="services.php">Services</a></li>
+          <li><a href="service.php">Services</a></li>
           <li><a href="work.php">Work</a></li>
           <li><a href="ecosystem.php">Ecosystem</a></li>
         </ul>

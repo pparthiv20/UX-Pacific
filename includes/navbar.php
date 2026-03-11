@@ -26,7 +26,7 @@
           <a class="nav-link<?php echo ($cp === 'about') ? ' active' : ''; ?>" href="about.php">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link<?php echo ($cp === 'services') ? ' active' : ''; ?>" href="services.php">Services</a>
+          <a class="nav-link<?php echo ($cp === 'services') ? ' active' : ''; ?>" href="service.php">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link<?php echo ($cp === 'work') ? ' active' : ''; ?>" href="work.php">Work</a>
