@@ -11,6 +11,13 @@
   background-color: #111111;
 }
 
+/* Sticky only on home page (navbar--dark); all other pages scroll normally */
+.navbar:not(.navbar--dark) {
+  position: relative !important;
+  top: auto !important;
+}
+
+
 .nav-cta-btn {
   width: 155px;
   height: 42px;
@@ -33,6 +40,7 @@
 
 .footer-inner {
   border: 2px solid #000;
+  border-top : 1px solid 
 }
 
 .footer-contact-link {
@@ -924,8 +932,7 @@ nav>.container>a {
 /* 📱 Mobile View */
 @media (max-width: 768px) {
   .section-title {
-    max-width: 305px;
-    /* आपके दिए mobile width के हिसाब से */
+    max-width: 90%;
     margin-bottom: 20px;
   }
 
@@ -1895,7 +1902,7 @@ body {
   .faq-left,
   .faq-right {
     flex: 1 1 100%;
-    margin-left: -20px;
+    margin-left: 0;
     max-width: 100%;
   }
 
@@ -1991,7 +1998,7 @@ body {
     width: 100%;
     max-width: 418px;
     height: 148px;
-    margin-left: 35px !important;
+    margin-left: auto !important;
     margin-right: auto !important;
   }
 
@@ -2159,7 +2166,7 @@ body {
 
 .navbar-collapse {
   /* background-color: #111111 !important; */
-  margin-left: -110px;
+  margin-left: -5px;
 }
 
 .navbar .scrolled {
@@ -4349,7 +4356,7 @@ body {
 
   .navbar-collapse {
     /* background-color: #111111 !important; */
-    margin-left: -110px;
+    margin-left: -9px;
   }
 
   .navbar .scrolled {
@@ -8440,8 +8447,7 @@ body {
   }
 
   .navbar {
-    background: rgba(13, 13, 16, 0.9);
-    opacity: 0.95;
+    background: #111111;
   }
 
   /* Navbar Scroller */
@@ -8996,7 +9002,7 @@ body {
 
 /* Services Grid Redesign CSS */
 .services-grid-section {
-  padding: 4rem 1rem;
+  padding: 0rem -1rem;
 }
 
 .service-card-link {
@@ -9802,5 +9808,168 @@ h5 {
 
   .abt-card:hover {
     transform: translateY(-4px) !important;
+  }
+}
+
+/* ================================================================
+   GLOBAL RESPONSIVE FIXES — appended 2026-03-11
+   Covers: hero subtext, #heading, footer images/grid,
+   services padding, faq fonts, terms/privacy fonts,
+   section-title, footer-content mobile stacking.
+   ================================================================ */
+
+/* ── Hero subtext: responsive font-size & line-height ── */
+.hero p.subtext {
+  font-size: clamp(0.875rem, 2.5vw, 1.25rem);
+  line-height: clamp(1.4, 2vw + 1.2, 2.5rem);
+}
+
+/* ── #heading (interactive heading on index): responsive size ── */
+#heading {
+  font-size: clamp(1.75rem, 6vw, 64px);
+  line-height: 1.15;
+}
+
+/* ── Footer images: scale down on tablet/mobile ── */
+@media (max-width: 768px) {
+  .footer-images img {
+    width: clamp(80px, 18vw, 140px);
+    margin: 4px;
+  }
+}
+
+/* ── Footer content: single column on small phones ── */
+@media (max-width: 480px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 16px;
+  }
+}
+
+/* ── Services section: reduce excessive padding on mobile ── */
+@media (max-width: 768px) {
+  .services {
+    padding: 20px 12px !important;
+    gap: 12px !important;
+  }
+}
+
+/* ── Hero section: reduce top/bottom padding on mobile ── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.25rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+}
+
+/* ── FAQ page: responsive accordion font sizes ── */
+@media (max-width: 480px) {
+  .faq-page .f24 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    padding: 16px !important;
+  }
+  .faq-page .f18 {
+    font-size: 14px !important;
+  }
+  .faq-page .faq_desc {
+    font-size: 16px !important;
+  }
+  .faq-page .accordion-button {
+    padding: 12px 14px;
+  }
+}
+
+/* ── Terms & Privacy pages: responsive font sizes ── */
+@media (max-width: 768px) {
+  .terms-page .f24,
+  .privacy-page .f24 {
+    font-size: 20px !important;
+    margin-bottom: 16px;
+  }
+  .terms-page .f20,
+  .terms-page .section p,
+  .terms-page .section li,
+  .privacy-page .f20,
+  .privacy-page .section p,
+  .privacy-page .section li {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+  .terms-page .terms-desc,
+  .privacy-page .privacy-desc {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+  .terms-page .section-divider,
+  .privacy-page .section-divider {
+    margin: 24px 0;
+  }
+  .terms-page .section,
+  .privacy-page .section {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .terms-page .f24,
+  .privacy-page .f24 {
+    font-size: 17px !important;
+  }
+  .terms-page .f20,
+  .terms-page .section p,
+  .terms-page .section li,
+  .privacy-page .f20,
+  .privacy-page .section p,
+  .privacy-page .section li {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .terms-page .terms-container,
+  .privacy-page .privacy-container {
+    padding: 16px 12px;
+    margin: 16px auto;
+  }
+  .terms-page .terms-desc,
+  .privacy-page .privacy-desc {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+}
+
+/* ── Lastup date (legal pages header): responsive ── */
+@media (max-width: 768px) {
+  .lastup {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ── Services offcanvas: ensure full width on mobile ── */
+@media (max-width: 768px) {
+  #serviceOffcanvas {
+    width: 92vw !important;
+    max-width: 92vw !important;
+  }
+  #serviceOffcanvas .offcanvas-body {
+    padding: 16px 18px 24px 18px !important;
+  }
+  #serviceOffcanvas .offcanvas-header {
+    padding: 16px 18px !important;
+  }
+}
+
+/* ── Nav CTA button: adapt on very small screens ── */
+@media (max-width: 360px) {
+  .nav-cta-btn {
+    width: 130px;
+    font-size: 13px;
+    padding: 0 8px;
   }
 }

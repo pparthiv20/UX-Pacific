@@ -161,13 +161,13 @@ $currentPage  = 'home';
       <p class="description">Unlock exclusive networking and learning opportunities across our Ambassador Club and Academy. Take the next step in your UX career with a supportive community and hands-on resources.</p>
       <div class="cards">
         <a href="https://club.uxpacific.com/" style="text-decoration:none" target="_blank">
-          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UX Shop</h1><span class="ux-line"> </span><p>Connect, share, and grow with peers in our exclusive ambassador community.</p><span class="arrow"> </span></div>
+          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UXP Shop</h1><span class="ux-line"> </span><p>Access premium UI kits, design systems, and templates crafted by industry experts.</p><span class="arrow"> </span></div>
         </a>
         <a href="https://academy.uxpacific.com/" style="text-decoration:none" target="_blank">
-          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UX Academy</h1><span class="ux-line"> </span><p>Advance your skills through curated booklets and hands-on learning experiences through our workshops.</p><span class="arrow"> </span></div>
+          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UXP Academy</h1><span class="ux-line"> </span><p>Advance your skills through curated booklets and hands-on learning experiences through our workshops.</p><span class="arrow"> </span></div>
         </a>
         <a href="https://community.uxpacific.com/" style="text-decoration:none" target="_blank">
-          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UX Community</h1><span class="ux-line"> </span><p>Be part of a thriving network where ideas turn into reality. Join our community to connect and grow.</p><span class="arrow"> </span></div>
+          <div class="card"><h1 class="text-white" style="font-size:1.7rem">UXP Community</h1><span class="ux-line"> </span><p>Be part of a thriving network where ideas turn into reality. Join our community to connect and grow.</p><span class="arrow"> </span></div>
         </a>
       </div>
     </section>
@@ -241,6 +241,18 @@ $currentPage  = 'home';
     <?php include 'includes/footer.php'; ?>
     <?php include 'includes/scripts.php'; ?>
 
+    <!-- Audit Success Popup -->
+    <div id="auditSuccessPopup" style="display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);">
+      <div style="background:#111127;border:1px solid rgba(97,71,189,0.4);border-radius:20px;padding:48px 40px;max-width:420px;width:90%;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,0.8);position:relative;">
+        <div style="width:68px;height:68px;background:linear-gradient(135deg,#6147bd,#a78bfa);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+        <h3 style="color:#fff;font-size:22px;font-weight:700;margin:0 0 12px;">Submitted Successfully!</h3>
+        <p style="color:#b2bad6;font-size:15px;line-height:1.6;margin:0 0 28px;">Thank you! Your UX Audit request has been received. We'll get back to you shortly.</p>
+        <button onclick="document.getElementById('auditSuccessPopup').style.display='none';" style="background:linear-gradient(90deg,#6147bd,#a78bfa);border:none;padding:12px 36px;border-radius:50px;color:#fff;font-weight:600;font-size:15px;cursor:pointer;">Done</button>
+      </div>
+    </div>
+
     <!-- UX Audit Modal -->
     <div class="modal fade" id="auditModal" tabindex="-1" aria-hidden="true" style="backdrop-filter:blur(8px);background-color:rgba(0,0,0,0.6);" data-bs-backdrop="true">
       <div class="modal-dialog modal-dialog-centered" style="max-width:500px;">
@@ -251,20 +263,73 @@ $currentPage  = 'home';
           </div>
           <div class="modal-body" style="padding:24px 32px 36px;">
             <p style="color:#b2bad6;font-size:14px;margin-bottom:24px;">Fill out the details below and we will get back to you shortly.</p>
-            <form class="contact-form" action="#" method="post">
+            <form id="auditForm" class="contact-form" action="send_audit.php" method="post">
               <div class="contact-row d-flex flex-column" style="gap:16px;">
                 <div class="contact-field" style="display:flex;flex-direction:column;gap:6px;"><label for="auditName" style="font-size:15px;color:#b2bad6;">Name</label><input id="auditName" name="name" type="text" placeholder="Enter your name here" style="height:56px;width:100%;background:#151515;border:1px solid #2e2e3e;border-radius:6px;color:#eee;padding:16px 20px;font-size:1rem;outline:none;" onfocus="this.style.borderColor='#6147bd'" onblur="this.style.borderColor='#2e2e3e'"></div>
                 <div class="contact-field" style="display:flex;flex-direction:column;gap:6px;"><label for="auditEmail" style="font-size:15px;color:#b2bad6;">Email</label><input id="auditEmail" name="email" type="email" placeholder="Enter your email address" style="height:56px;width:100%;background:#151515;border:1px solid #2e2e3e;border-radius:6px;color:#eee;padding:16px 20px;font-size:1rem;outline:none;" onfocus="this.style.borderColor='#6147bd'" onblur="this.style.borderColor='#2e2e3e'"></div>
                 <div class="contact-field" style="display:flex;flex-direction:column;gap:6px;"><label for="auditPhone" style="font-size:15px;color:#b2bad6;">Phone Number</label><input id="auditPhone" name="phone" type="tel" placeholder="+91 xxxxx- xxxxx" style="height:56px;width:100%;background:#151515;border:1px solid #2e2e3e;border-radius:6px;color:#eee;padding:16px 20px;font-size:1rem;outline:none;" onfocus="this.style.borderColor='#6147bd'" onblur="this.style.borderColor='#2e2e3e'"></div>
                 <div class="contact-field" style="display:flex;flex-direction:column;gap:6px;"><label for="auditUrl" style="font-size:15px;color:#b2bad6;">Website URL</label><input id="auditUrl" name="url" type="text" placeholder="https://yourwebsite.com" style="height:56px;width:100%;background:#151515;border:1px solid #2e2e3e;border-radius:6px;color:#eee;padding:16px 20px;font-size:1rem;outline:none;" onfocus="this.style.borderColor='#6147bd'" onblur="this.style.borderColor='#2e2e3e'"></div>
               </div>
+              <div id="auditError" style="display:none;margin-top:12px;color:#f87171;font-size:14px;text-align:center;"></div>
               <div class="contact-submit text-center mt-4 pt-2">
-                <button type="submit" style="background-color:#6147bd;border:none;padding:12px 40px;border-radius:50px;color:#ffffff;font-weight:500;font-size:16px;width:100%;height:50px;cursor:pointer;box-shadow:0 6px 20px rgba(97,71,189,0.4);" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">Submit Request</button>
+                <button id="auditSubmitBtn" type="submit" style="background-color:#6147bd;border:none;padding:12px 40px;border-radius:50px;color:#ffffff;font-weight:500;font-size:16px;width:100%;height:50px;cursor:pointer;box-shadow:0 6px 20px rgba(97,71,189,0.4);transition:transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">Submit Request</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+  <script>
+    document.getElementById('auditForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('auditSubmitBtn');
+      var errBox = document.getElementById('auditError');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      errBox.style.display = 'none';
+
+      var data = {
+        name:  document.getElementById('auditName').value,
+        email: document.getElementById('auditEmail').value,
+        phone: document.getElementById('auditPhone').value,
+        url:   document.getElementById('auditUrl').value
+      };
+
+      fetch('send_audit.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      })
+      .then(function(r){ return r.json(); })
+      .then(function(res) {
+        if (res.success) {
+          // Close audit modal
+          var auditModal = bootstrap.Modal.getInstance(document.getElementById('auditModal'));
+          if (auditModal) auditModal.hide();
+          // Reset form
+          document.getElementById('auditForm').reset();
+          // Show success popup
+          var popup = document.getElementById('auditSuccessPopup');
+          popup.style.display = 'flex';
+        } else {
+          errBox.textContent = res.message || 'Something went wrong. Please try again.';
+          errBox.style.display = 'block';
+        }
+      })
+      .catch(function() {
+        errBox.textContent = 'Network error. Please try again.';
+        errBox.style.display = 'block';
+      })
+      .finally(function() {
+        btn.disabled = false;
+        btn.textContent = 'Submit Request';
+      });
+    });
+
+    // Close success popup on backdrop click
+    document.getElementById('auditSuccessPopup').addEventListener('click', function(e) {
+      if (e.target === this) this.style.display = 'none';
+    });
+  </script>
   </body>
 </html>

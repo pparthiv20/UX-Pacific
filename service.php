@@ -75,8 +75,14 @@ $currentPage  = 'service';
       </div>
     </section>
 
+
+        <h2 class="ux-title" style="margin-top: 50px;">Design Solutions That Put <span class="highlight"> Users </span> First</h2>
+
+
+   
+
         <main>
-      <section class="services-grid-section mb-5 mt-5">
+      <section class="services-grid-section mb-5 mt-0">
         <div class="container text-center">
           <div class="row g-4 justify-content-center" id="services-grid-container" style="max-width:1200px;margin:0 auto;">
             <!-- Cards populated dynamically by JS -->

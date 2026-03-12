@@ -75,7 +75,10 @@ $currentPage  = 'about';
       </div>
     </section>
 
-    <h3 class="ux-subtitle" style="margin-top: 50px">Our Story <span class="ux-line"> </span></h3>
+    <!-- <h2 class="ux-title" style="margin-top: 50px;">Where Strategy Meets <span class="highlight"> Stunning </span> Design</h2> -->
+
+
+    <!-- <h3 class="ux-subtitle" style="margin-top: 50px">Our Story <span class="ux-line"> </span></h3> -->
     <div class="ab-story-section">
       <div class="ab-story-grid">
         <div class="ab-story-image">
@@ -92,8 +95,8 @@ $currentPage  = 'about';
     <section class="ab-mv-section">
       <div class="ab-mv-inner">
         <div class="ab-mv-header">
-          <h3 class="ux-subtitle" style="margin-top: 50px">Our Purpose <span class="ux-line"> </span></h3>
-          <h2 class="ab-title" style="margin-top: 12px;">Mission &amp; <em>Vision</em></h2>
+          <!-- <h3 class="ux-subtitle" style="margin-top: 50px">Our Purpose <span class="ux-line"> </span></h3> -->
+          <h2 class="ab-title" style="margin-top: 12px;">Our<em> Purpose</em></h2>
         </div>
         <div class="ab-mv-grid">
           <div class="ab-mv-card">
@@ -101,7 +104,7 @@ $currentPage  = 'about';
             <div class="ab-mv-card__body">
               <div class="ab-mv-card__label">Mission</div>
               <h3 class="ab-mv-card__title">What We Do</h3>
-              <p class="ab-mv-card__text">To humanize digital experiences through purposeful, scalable, and trend-aware design solutions that drive real impact for people and businesses.</p>
+              <p class="ab-mv-card__text">To bridge the gap between learning and real-world design practice by building an ecosystem where designers can learn, collaborate, and create meaningful digital products.</p>
               <div class="ab-mv-card__chips"><span class="ab-mv-chip">Trust-building</span><span class="ab-mv-chip">High Performance</span><span class="ab-mv-chip">Research-driven</span></div>
             </div>
           </div>
@@ -110,7 +113,7 @@ $currentPage  = 'about';
             <div class="ab-mv-card__body">
               <div class="ab-mv-card__label">Vision</div>
               <h3 class="ab-mv-card__title">Where We're Headed</h3>
-              <p class="ab-mv-card__text">To be a global leader in human-centred design by delivering intuitive, impactful, and accessible digital experiences that set new industry standards.</p>
+              <p class="ab-mv-card__text">To create the world’s most empowering design ecosystem, where knowledge, community, and opportunity come together to shape the next generation of designers.</p>
               <div class="ab-mv-card__chips"><span class="ab-mv-chip">Inclusive Design</span><span class="ab-mv-chip">Accessibility</span><span class="ab-mv-chip">Global Scale</span></div>
             </div>
           </div>
@@ -121,8 +124,8 @@ $currentPage  = 'about';
     <section class="ab-process-section">
       <div class="ab-values-inner">
         <div class="ab-section-header-center">
-          <h3 class="ux-subtitle" style="margin-top: 50px">What Drives Us <span class="ux-line"> </span></h3>
-          <h2 class="ab-title" style="margin-top: 12px;">Our Core <em>Values</em></h2>
+          <!-- <h3 class="ux-subtitle" style="margin-top: 50px">What Drives Us <span class="ux-line"> </span></h3> -->
+          <h2 class="ab-title" style="margin-top: 12px;">What Drives Our <em>Design</em></h2>
           <p class="ab-story-text" style="max-width:560px;margin:16px auto 0;">The principles that guide every decision we make and every experience we design.</p>
         </div>
         <div class="ab-process-steps">

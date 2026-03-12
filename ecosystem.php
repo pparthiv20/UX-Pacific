@@ -23,10 +23,15 @@ $currentPage  = 'ecosystem';
       .eco-btn { display:inline-flex; align-items:center; margin-top:auto; padding:0.8rem 2rem; background:linear-gradient(90deg,#6e54bb,#845ef7); border-radius:999px; color:white; font-weight:600; text-decoration:none; transition:all 0.3s; border:none; }
       .eco-btn:hover { background:linear-gradient(90deg,#845ef7,#6e54bb); box-shadow:0 4px 15px rgba(132,94,247,0.4); color:white; }
       @media (max-width:768px) {
-        .services { flex-direction:column !important; padding:20px !important; margin-bottom:50px !important; gap:16px !important; overflow:visible !important; display:flex !important; }
-        .service-card { width:100% !important; flex:none !important; margin:0 !important; padding:25px 20px !important; border:1px solid rgba(255,255,255,0.1) !important; border-radius:12px !important; background:transparent !important; display:flex !important; justify-content:center !important; align-items:center !important; min-height:100px !important; }
-        .service-card .service-icon, .service-card p, .service-card a { display:none !important; }
-        .service-card h3 { margin:0 !important; font-size:18px !important; font-weight:500 !important; text-align:center !important; color:white !important; }
+        .services { flex-direction:column !important; padding:20px 12px !important; margin-bottom:50px !important; gap:16px !important; overflow:visible !important; display:flex !important; }
+        .service-card { width:100% !important; flex:none !important; margin:0 !important; padding:20px !important; border:1px solid rgba(255,255,255,0.1) !important; border-radius:12px !important; background:transparent !important; display:flex !important; flex-direction:column !important; align-items:flex-start !important; min-height:unset !important; }
+        .service-card .service-icon { display:block !important; margin-bottom:12px !important; }
+        .service-card .service-icon img { width:48px !important; height:48px !important; }
+        .service-card h3 { margin:0 0 8px 0 !important; font-size:18px !important; font-weight:600 !important; text-align:left !important; color:white !important; }
+        .service-card p { display:block !important; font-size:13px !important; line-height:1.5 !important; color:rgba(255,255,255,0.65) !important; margin-bottom:12px !important; }
+        .service-card a { display:inline-block !important; font-size:13px !important; }
+        .eco-acc-header { padding:16px !important; font-size:1.1rem !important; }
+        .eco-acc-body { padding:0 16px 16px !important; }
       }
     </style>
   </head>

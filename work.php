@@ -33,8 +33,10 @@ $currentPage  = 'work';
       .work-card__desc { font-size:0.875rem; color:#8888b0; line-height:1.7; margin:0; }
       .work-card--featured { grid-column:span 2; }
       .work-card--featured .work-card__image { aspect-ratio:16/7; }
-      @keyframes fadeInScale { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes fadeInUp { from{opacity:0;transform:translateY(32px)} to{opacity:1;transform:translateY(0)} }
+      .work-card { opacity:1; }
       .hidden-card { display:none !important; }
+      .card-reveal { animation:fadeInUp 0.55s cubic-bezier(0.22,1,0.36,1) both; }
       .view-more-wrap { text-align:center; margin-top:48px; }
       .btn-arrow-icon { width:18px; height:18px; transition:transform 250ms ease; }
       @media (max-width:768px) {
@@ -56,6 +58,9 @@ $currentPage  = 'work';
         See how strategy, creativity, and research turn into real results.
       </div>
     </section>
+
+    <h2 class="ux-title" style="margin-top: 50px;">A Glimpse Into Our <span class="highlight"> Design Thinking </span></h2>
+
 
     <section class="projects-section">
       <div class="projects-container">
@@ -162,48 +167,80 @@ $currentPage  = 'work';
     <?php include 'includes/scripts.php'; ?>
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const filterBtns  = document.querySelectorAll('.filter-btn');
-        const workCards   = Array.from(document.querySelectorAll('.work-card[data-category]'));
-        const viewMoreBtn = document.getElementById('view-more-btn');
+        const filterBtns   = document.querySelectorAll('.filter-btn');
+        const workCards    = Array.from(document.querySelectorAll('.work-card[data-category]'));
+        const viewMoreBtn  = document.getElementById('view-more-btn');
         const viewMoreWrap = document.querySelector('.view-more-wrap');
         let expanded = false;
 
-        function renderCards() {
+        function revealCard(card, delay) {
+          card.classList.remove('hidden-card');
+          card.classList.remove('card-reveal');
+          // force reflow so animation restarts cleanly
+          void card.offsetWidth;
+          card.style.animationDelay = delay + 'ms';
+          card.classList.add('card-reveal');
+        }
+
+        function renderCards(animateAll) {
           const activeFilter = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
-          let matchingCards = [];
+          const matchingCards = [];
+
           workCards.forEach(card => {
-            const cats = card.dataset.category || '';
-            const matches = activeFilter === 'all' || cats.includes(activeFilter);
-            card.style.animation = 'none';
-            if (matches) { matchingCards.push(card); } else { card.classList.add('hidden-card'); }
+            const matches = activeFilter === 'all' || (card.dataset.category || '').includes(activeFilter);
+            if (matches) {
+              matchingCards.push(card);
+            } else {
+              card.classList.add('hidden-card');
+              card.classList.remove('card-reveal');
+              card.style.animationDelay = '';
+            }
           });
+
           matchingCards.forEach((card, index) => {
             if (index < 4 || expanded) {
-              card.classList.remove('hidden-card');
-              setTimeout(() => { card.style.animation = `fadeInScale 0.5s ease forwards`; }, index * 40);
-            } else { card.classList.add('hidden-card'); }
+              const wasHidden = card.classList.contains('hidden-card');
+              // animate: newly revealed cards always; initial render animate all
+              if (wasHidden || animateAll) {
+                revealCard(card, index * 80);
+              }
+            } else {
+              card.classList.add('hidden-card');
+              card.classList.remove('card-reveal');
+              card.style.animationDelay = '';
+            }
           });
+
           if (viewMoreWrap && viewMoreBtn) {
-            if (matchingCards.length > 4) {
-              viewMoreWrap.style.display = 'block';
-              const textEl  = viewMoreBtn.querySelector('.btn-text');
-              const arrowEl = viewMoreBtn.querySelector('.btn-arrow-icon');
-              if (textEl)  textEl.textContent = expanded ? 'View Less' : 'View More';
-              if (arrowEl) arrowEl.style.transform = expanded ? 'rotate(180deg)' : '';
-            } else { viewMoreWrap.style.display = 'none'; }
+            viewMoreWrap.style.display = matchingCards.length > 4 ? 'block' : 'none';
+            const textEl  = viewMoreBtn.querySelector('.btn-text');
+            const arrowEl = viewMoreBtn.querySelector('.btn-arrow-icon');
+            if (textEl)  textEl.textContent = expanded ? 'View Less' : 'View More';
+            if (arrowEl) arrowEl.style.transform = expanded ? 'rotate(180deg)' : '';
           }
         }
 
         filterBtns.forEach(btn => {
           btn.addEventListener('click', () => {
             filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-            btn.classList.add('active'); btn.setAttribute('aria-selected','true');
-            expanded = false; renderCards();
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected','true');
+            expanded = false;
+            renderCards(true);
           });
-          btn.addEventListener('keydown', e => { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); btn.click(); } });
+          btn.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); btn.click(); }
+          });
         });
-        if (viewMoreBtn) { viewMoreBtn.addEventListener('click', () => { expanded = !expanded; renderCards(); }); }
-        renderCards();
+
+        if (viewMoreBtn) {
+          viewMoreBtn.addEventListener('click', () => {
+            expanded = !expanded;
+            renderCards(false);
+          });
+        }
+
+        renderCards(true);
       });
     </script>
   </body>
