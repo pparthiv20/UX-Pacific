@@ -143,7 +143,8 @@ $currentPage  = 'home';
       </center>
     </div>
 
-    <div class="project-container">
+    <!-- Desktop Work Section -->
+    <div class="project-container d-none d-md-flex">
       <div class="project-text">
         <h3 id="project-title">Case Study of Survey Pacific</h3>
         <p class="mb-0" id="project-desc">We revamped the website UI/UX through deep heuristic evaluation and competitive benchmarking.</p>
@@ -161,6 +162,65 @@ $currentPage  = 'home';
         </div>
       </div>
     </div>
+
+    <!-- Mobile Work Card Slider -->
+    <div class="mw-slider d-md-none">
+      <button class="mw-arrow mw-prev" aria-label="Previous project">&#8249;</button>
+      <div class="mw-card">
+        <div class="mw-image">
+          <img id="mw-img" src="img/ux.webp" alt="Project" />
+        </div>
+        <div class="mw-info">
+          <h3 id="mw-title">Case Study of Survey Pacific</h3>
+          <p id="mw-desc">We revamped the website UI/UX through deep heuristic evaluation and competitive benchmarking.</p>
+          <div class="mw-tags" id="mw-tags">
+            <span>&#8226; Case Study</span><span>&#8226; Web</span>
+          </div>
+        </div>
+      </div>
+      <button class="mw-arrow mw-next" aria-label="Next project">&#8250;</button>
+    </div>
+
+    <style>
+      .mw-slider { display:flex; align-items:center; justify-content:center; gap:10px; padding:0 6px; margin:0 auto; max-width:420px; }
+      .mw-arrow { background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:#fff; font-size:28px; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; flex-shrink:0; transition:background 0.2s; line-height:1; padding:0; }
+      .mw-arrow:hover { background:rgba(97,71,189,0.5); border-color:#6147bd; }
+      .mw-card { flex:1; border-radius:16px; overflow:hidden; background:#1a1a2e; box-shadow:0 8px 32px rgba(0,0,0,0.6); }
+      .mw-image { width:100%; aspect-ratio:4/3; overflow:hidden; }
+      .mw-image img { width:100%; height:100%; object-fit:cover; display:block; transition:opacity 0.3s ease; }
+      .mw-info { background:linear-gradient(135deg,#3b2a7e,#6147bd); padding:18px 16px 16px; }
+      .mw-info h3 { color:#fff; font-size:17px; font-weight:700; margin:0 0 8px; line-height:1.3; }
+      .mw-info p { color:rgba(255,255,255,0.82); font-size:12.5px; line-height:1.6; margin:0 0 12px; }
+      .mw-tags { display:flex; gap:12px; flex-wrap:wrap; }
+      .mw-tags span { color:rgba(255,255,255,0.75); font-size:12px; font-style:italic; }
+    </style>
+
+    <script>
+      (function(){
+        var mwData = [
+          { img:'img/ux.webp',    title:'Case Study of Survey Pacific',  desc:'We revamped the website UI/UX through deep heuristic evaluation and competitive benchmarking.', tags:['Case Study','Web'] },
+          { img:'img/cedar.webp', title:'UX Audit of CEDAR Himalaya',    desc:'We audited their digital experience to align with their mission of sustainable mountain development.', tags:['UX Audit','Web'] },
+          { img:'img/dist.webp',  title:'UX Audit of Distinct Buzz',     desc:'We uncovered usability gaps and friction in the user journey leading to smoother navigation and higher engagement.', tags:['UX Audit','Web'] }
+        ];
+        var idx = 0;
+        function render(){
+          var d = mwData[idx];
+          var img = document.getElementById('mw-img');
+          img.style.opacity = '0';
+          setTimeout(function(){ img.src = d.img; img.style.opacity = '1'; }, 180);
+          document.getElementById('mw-title').textContent = d.title;
+          document.getElementById('mw-desc').textContent  = d.desc;
+          document.getElementById('mw-tags').innerHTML    = d.tags.map(function(t){ return '<span>&#8226; '+t+'</span>'; }).join('');
+        }
+        document.addEventListener('DOMContentLoaded', function(){
+          var prev = document.querySelector('.mw-prev');
+          var next = document.querySelector('.mw-next');
+          if(!prev) return;
+          prev.addEventListener('click', function(){ idx = (idx - 1 + mwData.length) % mwData.length; render(); });
+          next.addEventListener('click', function(){ idx = (idx + 1) % mwData.length; render(); });
+        });
+      })();
+    </script>
 
     <section class="ecosystem" id="ecosystem" style="margin-top: 100px">
       <h3 class="ux-subtitle">Our Ecosystem <span class="ux-line"> </span></h3>
