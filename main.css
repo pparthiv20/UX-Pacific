@@ -10565,3 +10565,193 @@ h5 {
     border-radius: 999px !important;
   }
 }
+
+/* ================================================================
+   ALL PAGES — UNIFIED MOBILE TYPOGRAPHY (titles, subtitles, body)
+   Applies to: about, service, work, ecosystem, faq, contact
+   ================================================================ */
+@media (max-width: 767.98px) {
+
+  /* ── Page Banner (about-header) ── */
+  .about-header h1 {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .innovation-badge-exact {
+    font-size: 12px !important;
+    line-height: 1.65 !important;
+    padding: 10px 16px !important;
+    margin: 0 16px !important;
+  }
+
+  /* ── Section Titles (.ab-title) — About / Service pages ── */
+  .ab-title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* ── Section label (small purple text above title) ── */
+  .ab-label {
+    font-size: 11px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  /* ── Section body / description text ── */
+  .ab-story-text {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* ── About/Service section spacing ── */
+  .ab-story-section {
+    padding: 32px 16px !important;
+  }
+
+  .ab-mv-section {
+    padding: 32px 16px !important;
+  }
+
+  .ab-process-section {
+    padding: 32px 16px !important;
+  }
+
+  .ab-section-header-center {
+    margin-bottom: 2rem !important;
+  }
+
+  .ab-section-header-center p,
+  .ab-story-section p {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* ── Process steps ── */
+  .ab-process-step__title {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+  }
+
+  .ab-process-step__desc {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ── Process section (Our Proven Process) ── */
+  .process-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+  }
+
+  .process-list li {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* ── Work page ── */
+  .work-card__title {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+  }
+
+  .work-card__desc {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  .work-tag {
+    font-size: 11px !important;
+  }
+
+  .filter-btn {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+  }
+
+  /* ── Ecosystem page ── */
+  .eco-acc-header {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    padding: 16px !important;
+  }
+
+  .eco-acc-body {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  .eco-acc-body p,
+  .eco-acc-body li {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  /* Service cards on ecosystem page */
+  .service-card h3 {
+    font-size: 17px !important;
+  }
+
+  /* ── Service page — ux-title + cards ── */
+  .ux-card-title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  .ux-card-desc {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .ux-card-link {
+    font-size: 13px !important;
+  }
+
+  /* ── FAQ page ── */
+  .f24 {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  .f18 {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  /* ── Contact page ── */
+  .contact-info-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .contact-info-desc {
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+  }
+
+  .contact-header-label {
+    font-size: 11px !important;
+  }
+
+  .contact-info-features li {
+    font-size: 13px !important;
+  }
+
+  /* ── Mission/Vision card text on about page ── */
+  .ab-mv-card__title {
+    font-size: 20px !important;
+  }
+
+  .ab-mv-card__text {
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+  }
+
+  .ab-mv-chip {
+    font-size: 11px !important;
+  }
+}
