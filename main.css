@@ -1077,7 +1077,11 @@ nav>.container>a {
   height: 150px;
   object-fit: contain;
   border-radius: 50px;
+}
 
+/* Desktop: card-content wrapper is invisible — layout unchanged */
+.service-card-content {
+  display: contents;
 }
 
 .section-title p {
@@ -10757,34 +10761,84 @@ h5 {
 }
 
 /* ================================================================
-   ABOUT-HEADER — VIDEO BACKGROUND (DESKTOP)
+   ABOUT-HEADER — GIF BACKGROUND (ALL SCREENS)
    ================================================================ */
+
+/* Hide the video elements on all screens — gif is used instead */
+.header-bg-video,
+.header-bg-overlay {
+  display: none !important;
+}
+
+/* Desktop about-header: gif background + dark overlay */
 .about-header {
   position: relative !important;
   overflow: hidden !important;
+  height: 320px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+
+  background-image: url('img/bg_ani.gif') !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-color: #0a0a14 !important;
+
+  border-top: 2px solid rgba(140, 100, 255, 0.5) !important;
+  border-bottom: 1px solid rgba(80, 50, 160, 0.2) !important;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6) !important;
 }
 
-.header-bg-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-  pointer-events: none;
+/* Dark overlay via ::before */
+.about-header::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 6, 20, 0.68) 0%,
+    rgba(10, 8, 24, 0.78) 100%
+  ) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
 }
 
-.header-bg-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,20,0.52) 0%, rgba(8,8,18,0.75) 100%);
-  z-index: 1;
+/* All children sit above the overlay */
+.about-header > * {
+  position: relative !important;
+  z-index: 1 !important;
 }
 
-.about-header > *:not(.header-bg-video):not(.header-bg-overlay) {
-  position: relative;
-  z-index: 2;
+/* Desktop title */
+.about-header h1 {
+  font-size: 56px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.15 !important;
+  margin: 0 0 16px !important;
+  text-shadow: 0 2px 32px rgba(100, 60, 200, 0.5) !important;
+}
+
+/* Desktop badge */
+.about-header .innovation-badge-exact {
+  display: inline-block !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: rgba(220, 210, 255, 0.88) !important;
+  padding: 12px 28px !important;
+  border-radius: 10px !important;
+  background: rgba(20, 10, 50, 0.5) !important;
+  border: 1px solid rgba(130, 90, 230, 0.4) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  max-width: 720px !important;
+  white-space: normal !important;
+  text-align: center !important;
 }
 
 /* ================================================================

@@ -23,15 +23,79 @@ $currentPage  = 'ecosystem';
       .eco-btn { display:inline-flex; align-items:center; margin-top:auto; padding:0.8rem 2rem; background:linear-gradient(90deg,#6e54bb,#845ef7); border-radius:999px; color:white; font-weight:600; text-decoration:none; transition:all 0.3s; border:none; }
       .eco-btn:hover { background:linear-gradient(90deg,#845ef7,#6e54bb); box-shadow:0 4px 15px rgba(132,94,247,0.4); color:white; }
       @media (max-width:768px) {
-        .services { flex-direction:column !important; padding:20px 12px !important; margin-bottom:50px !important; gap:16px !important; overflow:visible !important; display:flex !important; }
-        .service-card { width:100% !important; flex:none !important; margin:0 !important; padding:20px !important; border:1px solid rgba(255,255,255,0.1) !important; border-radius:12px !important; background:transparent !important; display:flex !important; flex-direction:column !important; align-items:flex-start !important; min-height:unset !important; }
-        .service-card .service-icon { display:block !important; margin-bottom:12px !important; }
-        .service-card .service-icon img { width:48px !important; height:48px !important; }
-        .service-card h3 { margin:0 0 8px 0 !important; font-size:18px !important; font-weight:600 !important; text-align:left !important; color:white !important; }
-        .service-card p { display:block !important; font-size:13px !important; line-height:1.5 !important; color:rgba(255,255,255,0.65) !important; margin-bottom:12px !important; }
-        .service-card a { display:inline-block !important; font-size:13px !important; }
-        .eco-acc-header { padding:16px !important; font-size:1.1rem !important; }
-        .eco-acc-body { padding:0 16px 16px !important; }
+        .services {
+          flex-direction: column !important;
+          padding: 16px !important;
+          margin-bottom: 50px !important;
+          gap: 14px !important;
+          overflow: visible !important;
+          display: flex !important;
+        }
+        .service-card {
+          width: 100% !important;
+          max-width: 100% !important;
+          flex: none !important;
+          margin: 0 !important;
+          padding: 20px !important;
+          border: 1px solid rgba(255,255,255,0.12) !important;
+          border-radius: 14px !important;
+          background: linear-gradient(135deg, rgba(99,73,192,0.55), rgba(14,2,56,0.7)) !important;
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: flex-start !important;
+          gap: 14px !important;
+          min-height: unset !important;
+          text-align: left !important;
+          box-shadow: 0 4px 20px rgba(99,73,192,0.2) !important;
+        }
+        .service-card .service-icon {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex-shrink: 0 !important;
+          width: 60px !important;
+          height: 60px !important;
+          margin: 0 !important;
+          background: rgba(255,255,255,0.07) !important;
+          border-radius: 12px !important;
+        }
+        .service-card .service-icon img {
+          width: 40px !important;
+          height: 40px !important;
+          object-fit: contain !important;
+          border-radius: 6px !important;
+        }
+        .service-card-content {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          min-width: 0;
+        }
+        .service-card h3 {
+          margin: 0 0 6px 0 !important;
+          font-size: 17px !important;
+          font-weight: 700 !important;
+          color: white !important;
+          line-height: 1.3 !important;
+        }
+        .service-card p {
+          display: block !important;
+          font-size: 13px !important;
+          line-height: 1.55 !important;
+          color: rgba(255,255,255,0.65) !important;
+          margin: 0 0 10px 0 !important;
+        }
+        .service-card a {
+          display: inline-flex !important;
+          align-items: center !important;
+          font-size: 13px !important;
+          font-weight: 600 !important;
+          color: #a78bfa !important;
+          border-bottom: none !important;
+          gap: 3px !important;
+        }
+        .eco-acc-header { padding: 16px !important; font-size: 1.05rem !important; }
+        .eco-acc-body { padding: 0 16px 16px !important; }
       }
     </style>
   </head>
@@ -55,21 +119,27 @@ $currentPage  = 'ecosystem';
     <div class="services">
       <div class="service-card" onclick="window.open('#','_blank')" style="cursor:pointer;">
         <div class="service-icon"><img alt="UI" src="img/shop1.png" /></div>
-        <h3>UX Pacific Shop</h3>
-        <p>Access premium UI kits, design systems, and templates crafted by industry experts to speed up your workflow and elevate your final products.</p>
-        <a href="#" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        <div class="service-card-content">
+          <h3>UX Pacific Shop</h3>
+          <p>Access premium UI kits, design systems, and templates crafted by industry experts to speed up your workflow and elevate your final products.</p>
+          <a href="#" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        </div>
       </div>
       <div class="service-card" onclick="window.open('https://academy.uxpacific.com/','_blank')" style="cursor:pointer;">
         <div class="service-icon"><img alt="Audit" src="img/acedmy.png" /></div>
-        <h3>UX Academy</h3>
-        <p>Level up your skills with our hands-on workshops, courses, and mentorship programs specifically tailored and designed for future design leaders.</p>
-        <a href="https://academy.uxpacific.com/" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        <div class="service-card-content">
+          <h3>UX Academy</h3>
+          <p>Level up your skills with our hands-on workshops, courses, and mentorship programs specifically tailored and designed for future design leaders.</p>
+          <a href="https://academy.uxpacific.com/" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        </div>
       </div>
       <div class="service-card" onclick="window.open('https://community.uxpacific.com/','_blank')" style="cursor:pointer;">
         <div class="service-icon"><img alt="Strategy" src="img/community.png" /></div>
-        <h3>UX Community</h3>
-        <p>Be part of a thriving network where ideas turn into reality. Join our broader UX Pacific ecosystem community to connect and grow.</p>
-        <a href="https://community.uxpacific.com/" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        <div class="service-card-content">
+          <h3>UX Community</h3>
+          <p>Be part of a thriving network where ideas turn into reality. Join our broader UX Pacific ecosystem community to connect and grow.</p>
+          <a href="https://community.uxpacific.com/" target="_blank" style="text-decoration:none;color:#6366f1;font-weight:500;">View Details &rarr;</a>
+        </div>
       </div>
     </div>
 

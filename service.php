@@ -283,7 +283,7 @@ function openService(id) {
   document.getElementById('oc-icon').innerHTML = `<i class="fas ${s.icon}"></i>`;
   document.getElementById('oc-title').textContent = s.title;
   document.getElementById('oc-desc').textContent = s.fullDesc;
-  document.getElementById('oc-solves').innerHTML = s.solves.map(x => `<div class="col-6"><div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:8px 12px;font-size:13px;">✓ ${x}</div></div>`).join('');
+  document.getElementById('oc-solves').innerHTML = s.solves.map(x => { const short = x.split(' ').slice(0,4).join(' '); return `<div class="col-6"><div style="background:rgba(255,255,255,0.05);border-radius:6px;padding:8px 12px;font-size:13px;">✓ ${short}</div></div>`; }).join('');
   document.getElementById('oc-steps').innerHTML = s.steps.map((x,i)=>`<div class="oc-step"><span class="oc-step-num">${String(i+1).padStart(2,'0')}</span>${x}</div>`).join('');
   document.getElementById('oc-changes').innerHTML = s.changes.map(x => `<div class="col-6"><div style="background:rgba(167,139,250,0.1);border-radius:6px;padding:8px 12px;font-size:13px;color:#c4b5fd;">→ ${x}</div></div>`).join('');
   document.getElementById('oc-deliverables').innerHTML = s.deliverables.map(x => `<li>• ${x}</li>`).join('');
