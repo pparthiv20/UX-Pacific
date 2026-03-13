@@ -517,25 +517,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const setErrorCheckbox = (checkbox) => {
     checkbox.style.outline = '2px solid #ff5722';
     checkbox.style.outlineOffset = '2px';
-    const label = checkbox.closest('label') || checkbox.parentElement;
-    if (label && !label.parentElement.querySelector('.checkbox-error-msg')) {
-      const msg = document.createElement('p');
-      msg.className = 'checkbox-error-msg';
-      msg.textContent = 'Please select this field.';
-      msg.style.cssText = 'color:#ff5722;font-size:0.78rem;margin:6px 0 0 0;display:flex;align-items:center;gap:5px;';
-      msg.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ff5722" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Please select this field.';
-      label.parentElement.appendChild(msg);
-    }
   };
 
   const setSuccessCheckbox = (checkbox) => {
     checkbox.style.outline = '';
     checkbox.style.outlineOffset = '';
-    const label = checkbox.closest('label') || checkbox.parentElement;
-    if (label) {
-      const msg = label.parentElement.querySelector('.checkbox-error-msg');
-      if (msg) msg.remove();
-    }
   };
 
   const validateField = (field) => {
@@ -638,7 +624,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       try {
-          const response = await fetch('send_mail.php', {
+          const response = await fetch('send_mail', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
               body: JSON.stringify(formData)

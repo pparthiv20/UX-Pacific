@@ -156,7 +156,7 @@ $currentPage  = 'work';
       <div class="dots-bg desktop-only"><canvas id="dots-canvas"></canvas></div>
       <div class="cta-container">
         <div class="cta-text cta-text--padded">
-          <h2>Start your <span>UI/UX</span> journey with <br /><span class="highlight">UXPacific Team</span></h2>
+          <h2>Start your <span>UI/UX</span> journey with <br /><span class="highlight">UX Pacific Team</span></h2>
           <p class="mt-4 mb-4 cta-desc">Build your site effortlessly and showcase your work with confidence.<br />Ready to stand out? Get started today!</p>
           <a href="/contact" class="cta-button cta-button--wide">Get in touch <span class="arrow"></span></a>
         </div>

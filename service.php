@@ -174,7 +174,7 @@ $currentPage  = 'service';
       <div class="dots-bg desktop-only"><canvas id="dots-canvas"></canvas></div>
       <div class="cta-container">
         <div class="cta-text">
-          <h1>Start your <span>UI/UX</span> journey with <br><span class="highlight">UXPacific Team</span></h1>
+          <h1>Start your <span>UI/UX</span> journey with <br><span class="highlight">UX Pacific Team</span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br> Ready to stand out? Get started today!</p>
           <a href="/contact" class="cta-button">Get in touch <span class="arrow"></span></a>
         </div>

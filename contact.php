@@ -117,7 +117,7 @@ $currentPage  = 'contact';
         <div class="contact-grid">
           <div class="contact-info-section">
             <h2 class="contact-info-title">Connect <span>With Us</span></h2>
-            <p class="contact-info-desc">Whether you're a startup with a big idea, an enterprise looking to level up your UX, or a designer wanting to collaborate &mdash; we're here for all of it.</p>
+            <p class="contact-info-desc">Whether you're a startup with a big idea, an enterprise looking to level up your UX, or a designer wanting to collaborate  we're here for all of it.</p>
             <div class="contact-info-list">
               <div class="contact-info-item"><div class="icon-box"><i class="fas fa-map-marker-alt"></i></div><div class="item-text"><span class="item-label">LOCATION</span><strong>404, Capstone Building, Kalgi Cross Road,<br>Ahmedabad</strong></div></div>
               <div class="contact-info-item"><div class="icon-box"><i class="fas fa-phone-alt"></i></div><div class="item-text"><span class="item-label">PHONE</span><strong>+91 92740-61063</strong></div></div>

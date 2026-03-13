@@ -72,7 +72,7 @@ $currentPage  = 'home';
     <div class="ux-image-container" style="margin-top: 80px">
       <img alt="UX Strategy" class="ux-image" id="ii1" src="img/b.webp" />
       <div class="floating-tag" id="d1" style="top:15%;left:5%;width:119px;font-size:16px;transform:rotate(-13.19deg);">Accessibility</div>
-      <span class="tag-image" id="d66" style="top:20%;left:14%;background-image:url('img/shruti.png')"></span>
+      <span class="tag-image" id="d66" style="top:26%;left:14%;background-image:url('img/shruti.png')"></span>
       <div class="floating-tag" id="d3" style="top:22.5%;left:22%;width:75px;font-size:16px;transform:rotate(15.19deg);">UI/UX</div>
       <div class="floating-tag" id="d1" style="top:60%;left:15%;width:119px;font-size:16px;transform:rotate(19.19deg);">Wireframing</div>
       <span class="tag-image" id="d55" style="top:70%;left:24%;background-image:url('img/aradhya.png')"></span>
@@ -289,7 +289,7 @@ $currentPage  = 'home';
       <div class="dots-bg desktop-only"><canvas id="dots-canvas"> </canvas></div>
       <div class="cta-container">
         <div class="cta-text">
-          <h1>Start your <span> UI/UX </span> journey with <br /><span class="highlight"> UXPacific Team </span></h1>
+          <h1>Start your <span> UI/UX </span> journey with <br /><span class="highlight"> UX Pacific Team </span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br />Ready to stand out? Get started today!</p>
           <a class="cta-button" href="/contact">Get in touch <span class="arrow"> </span></a>
         </div>
@@ -325,11 +325,11 @@ $currentPage  = 'home';
         </div>
       </div>
       <div class="images-row">
-        <img alt="workshop" class="img1" src="img/1.webp" style="transform:rotate(-9.89deg);z-index:1" />
+        <img alt="workshop" class="img1" src="img/5.webp" style="transform:rotate(-9.89deg);z-index:1" />
         <img alt="workshop" src="img/2.webp" style="transform:rotate(1.82deg)" />
         <img alt="workshop" src="img/3.webp" style="transform:rotate(14.67deg);left:-30px;z-index:1" />
         <img alt="workshop" src="img/4.webp" style="transform:rotate(-5.34deg);left:-50px" />
-        <img alt="workshop" src="img/5.webp" style="transform:rotate(15.98deg);left:-100px" />
+        <img alt="workshop" src="img/1.webp" style="transform:rotate(15.98deg);left:-100px" />
       </div>
     </section>
 
@@ -390,7 +390,7 @@ $currentPage  = 'home';
         url:   document.getElementById('auditUrl').value
       };
 
-      fetch('send_audit.php', {
+      fetch('send_audit', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
