@@ -17,10 +17,10 @@ $currentPage  = 'work';
       .filter-btn:hover { color:#ffffff; }
       .filter-btn.active { background:linear-gradient(90deg,#6147bd,#a78bfa); color:#ffffff; box-shadow:0 0 30px rgba(124,95,230,0.25); }
       .work-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
-      .work-card { background:#101028; border:1px solid rgba(255,255,255,0.06); border-radius:24px; overflow:hidden; transition:all 400ms ease; cursor:pointer; }
+      .work-card { background:#101028; border:1px solid rgba(255,255,255,0.06); border-radius:24px; overflow:hidden; transition:transform 400ms ease,box-shadow 400ms ease,border-color 400ms ease; cursor:pointer; }
       .work-card:hover { border-color:rgba(124,95,230,0.35); transform:translateY(-6px); box-shadow:0 8px 32px rgba(0,0,0,0.7),0 0 30px rgba(124,95,230,0.25); }
       .work-card__image { position:relative; overflow:hidden; aspect-ratio:16/10; background:#14143a; }
-      .work-card__image img { width:100%; height:100%; object-fit:cover; transition:transform 0.6s cubic-bezier(0.22,1,0.36,1); }
+      .work-card__image img { width:100%; height:100%; object-fit:cover; transition:transform 0.6s cubic-bezier(0.22,1,0.36,1); display:block; }
       .work-card:hover .work-card__image img { transform:scale(1.05); }
       .work-card__overlay { position:absolute; inset:0; background:rgba(7,7,26,0.7); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 250ms ease; }
       .work-card:hover .work-card__overlay { opacity:1; }
@@ -33,17 +33,17 @@ $currentPage  = 'work';
       .work-card__desc { font-size:0.875rem; color:#8888b0; line-height:1.7; margin:0; }
       .work-card--featured { grid-column:span 2; }
       .work-card--featured .work-card__image { aspect-ratio:16/7; }
-      @keyframes fadeInUp { from{opacity:0;transform:translateY(32px)} to{opacity:1;transform:translateY(0)} }
+      @keyframes fadeInUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
       .work-card { opacity:1; }
       .hidden-card { display:none !important; }
-      .card-reveal { animation:fadeInUp 0.55s cubic-bezier(0.22,1,0.36,1) both; }
+      .card-reveal { animation:fadeInUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
       .view-more-wrap { text-align:center; margin-top:48px; }
       .btn-arrow-icon { width:18px; height:18px; transition:transform 250ms ease; }
       @media (max-width:768px) {
         .work-grid { grid-template-columns:1fr; }
         .work-card--featured { grid-column:span 1; }
         .work-card--featured .work-card__image { aspect-ratio:16/10; }
-        .filter-bar { max-width:360px !important; font-size:6px !important; padding:10px; }
+        .filter-bar { max-width:360px !important; font-size:0.8rem !important; padding:4px; }
       }
     </style>
   </head>
@@ -62,16 +62,15 @@ $currentPage  = 'work';
       </div>
     </section>
 
-    <h2 class="ux-title" style="margin-top: 50px;">A Glimpse Into Our <span class="highlight"> Design Thinking </span></h2>
-
+    <h2 class="ux-title" style="margin-top:50px;">A Glimpse Into Our <span class="highlight"> Design Thinking </span></h2>
 
     <section class="projects-section">
       <div class="projects-container">
         <div class="filter-bar" role="tablist" aria-label="Filter work by category">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="filter-btn" data-filter="projects" role="tab" aria-selected="false">Projects</button>
-          <button class="filter-btn" data-filter="case-studies" role="tab" aria-selected="false">Case Studies</button>
-          <button class="filter-btn" data-filter="articles" role="tab" aria-selected="false">Articles</button>
+          <button class="filter-btn active" data-filter="all"          role="tab" aria-selected="true">All</button>
+          <button class="filter-btn"        data-filter="projects"     role="tab" aria-selected="false">Projects</button>
+          <button class="filter-btn"        data-filter="case-studies" role="tab" aria-selected="false">Case Studies</button>
+          <button class="filter-btn"        data-filter="articles"     role="tab" aria-selected="false">Articles</button>
         </div>
 
         <div class="work-grid" id="work-grid">
@@ -142,7 +141,7 @@ $currentPage  = 'work';
       </div>
     </section>
 
-    <h2 class="ux-subtitle" style="margin-top: 100px">Our Clients <span class="ux-line"></span></h2>
+    <h2 class="ux-subtitle" style="margin-top:100px">Our Clients <span class="ux-line"></span></h2>
     <div class="logo-slider">
       <div class="logo-track">
         <img src="img/c1.png" alt="Client logo" /><img src="img/c2.png" alt="Client logo" /><img src="img/c3.png" alt="Client logo" />
@@ -177,9 +176,7 @@ $currentPage  = 'work';
         let expanded = false;
 
         function revealCard(card, delay) {
-          card.classList.remove('hidden-card');
-          card.classList.remove('card-reveal');
-          // force reflow so animation restarts cleanly
+          card.classList.remove('hidden-card', 'card-reveal');
           void card.offsetWidth;
           card.style.animationDelay = delay + 'ms';
           card.classList.add('card-reveal');
@@ -187,12 +184,12 @@ $currentPage  = 'work';
 
         function renderCards(animateAll) {
           const activeFilter = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
-          const matchingCards = [];
+          const matching = [];
 
           workCards.forEach(card => {
             const matches = activeFilter === 'all' || (card.dataset.category || '').includes(activeFilter);
             if (matches) {
-              matchingCards.push(card);
+              matching.push(card);
             } else {
               card.classList.add('hidden-card');
               card.classList.remove('card-reveal');
@@ -200,13 +197,10 @@ $currentPage  = 'work';
             }
           });
 
-          matchingCards.forEach((card, index) => {
-            if (index < 4 || expanded) {
+          matching.forEach((card, i) => {
+            if (i < 4 || expanded) {
               const wasHidden = card.classList.contains('hidden-card');
-              // animate: newly revealed cards always; initial render animate all
-              if (wasHidden || animateAll) {
-                revealCard(card, index * 80);
-              }
+              if (wasHidden || animateAll) revealCard(card, i * 60);
             } else {
               card.classList.add('hidden-card');
               card.classList.remove('card-reveal');
@@ -215,10 +209,10 @@ $currentPage  = 'work';
           });
 
           if (viewMoreWrap && viewMoreBtn) {
-            viewMoreWrap.style.display = matchingCards.length > 4 ? 'block' : 'none';
+            viewMoreWrap.style.display = matching.length > 4 ? 'block' : 'none';
             const textEl  = viewMoreBtn.querySelector('.btn-text');
             const arrowEl = viewMoreBtn.querySelector('.btn-arrow-icon');
-            if (textEl)  textEl.textContent = expanded ? 'View Less' : 'View More';
+            if (textEl)  textEl.textContent      = expanded ? 'View Less' : 'View More';
             if (arrowEl) arrowEl.style.transform = expanded ? 'rotate(180deg)' : '';
           }
         }
