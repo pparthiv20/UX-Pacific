@@ -72,7 +72,10 @@ $currentPage  = 'service';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Services</h1>
-      <div class="innovation-badge-exact">Design That <span>Delivers</span> Real <span>Results</span></div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">We design user-focused digital solutions that combine strategy, creativity, and research.<br>From UI to brand strategy, every service is built to deliver real results.</span>
+        <span class="badge-mobile">Design That <span>Delivers</span> Real <span>Results</span></span>
+      </div>
     </section>
 
 
@@ -173,7 +176,7 @@ $currentPage  = 'service';
         <div class="cta-text">
           <h1>Start your <span>UI/UX</span> journey with <br><span class="highlight">UXPacific Team</span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br> Ready to stand out? Get started today!</p>
-          <a href="contact.php" class="cta-button">Get in touch <span class="arrow"></span></a>
+          <a href="/contact" class="cta-button">Get in touch <span class="arrow"></span></a>
         </div>
         <div class="cta-blur-overlay"></div>
         <div class="cta-image"><img src="img/Rectangle 5192.webp" alt="UX Design" /></div>
@@ -212,7 +215,7 @@ $currentPage  = 'service';
         </div>
         <div class="mt-auto pt-3 pb-4">
           <div class="text-center">
-            <a href="contact.php" class="custom-discuss-btn" style="background-color:#6147bd;color:#ffffff;padding:14px 40px;border-radius:50px;text-decoration:none;font-weight:500;font-size:18px;display:inline-block;box-shadow:0 10px 30px rgba(97,71,189,0.5);min-width:250px;">Discuss This Service</a>
+            <a href="/contact" class="custom-discuss-btn" style="background-color:#6147bd;color:#ffffff;padding:14px 40px;border-radius:50px;text-decoration:none;font-weight:500;font-size:18px;display:inline-block;box-shadow:0 10px 30px rgba(97,71,189,0.5);min-width:250px;">Discuss This Service</a>
           </div>
         </div>
       </div>

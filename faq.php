@@ -21,7 +21,10 @@ $currentPage  = 'faq';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>FAQ</h1>
-      <div class="innovation-badge-exact">Every <span>Question</span>, Clearly <span>Answered</span></div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">We've gathered answers to questions we're asked all the time.<br>Still stumped? Drop us a line — we love a good question!</span>
+        <span class="badge-mobile">Every <span>Question</span>, Clearly <span>Answered</span></span>
+      </div>
     </section>
 
     <main class="container py-5">
@@ -126,7 +129,7 @@ $currentPage  = 'faq';
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body f18">
-              Just reach out via our <a href="contact.php" style="color:#a78bfa;">Contact Page</a>. We'll schedule a quick call, understand your goals, and tailor a plan that fits.
+              Just reach out via our <a href="/contact" style="color:#a78bfa;">Contact Page</a>. We'll schedule a quick call, understand your goals, and tailor a plan that fits.
             </div>
           </div>
         </div>
@@ -181,7 +184,7 @@ $currentPage  = 'faq';
         <div class="cta-text">
           <h1>Start your <span>UI/UX</span> journey with <br><span class="highlight">UXPacific Team</span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br>Ready to stand out? Get started today!</p>
-          <a href="contact.php" class="cta-button">Get in touch <span class="arrow"></span></a>
+          <a href="/contact" class="cta-button">Get in touch <span class="arrow"></span></a>
         </div>
         <div class="cta-blur-overlay"></div>
         <div class="cta-image"><img src="img/Rectangle 5192.webp" alt="UX Design" /></div>

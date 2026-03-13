@@ -151,7 +151,10 @@ $currentPage  = 'about';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>About Us</h1>
-      <div class="innovation-badge-exact">Design with <span>Purpose</span> &amp; <span>Empathy</span></div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">We are a strategic design partner focused on creating meaningful digital experiences.<br>Driven by purpose and empathy, we craft solutions that deliver real impact.</span>
+        <span class="badge-mobile">Design with <span>Purpose</span> &amp; <span>Empathy</span></span>
+      </div>
     </section>
 
     <!-- <h2 class="ux-title" style="margin-top: 50px;">Where Strategy Meets <span class="highlight"> Stunning </span> Design</h2> -->
@@ -239,7 +242,7 @@ $currentPage  = 'about';
         <div class="cta-text">
           <h1>Start your <span>UI/UX</span> journey with <br><span class="highlight">UXPacific Team</span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br> Ready to stand out? Get started today!</p>
-          <a href="contact.php" class="cta-button">Get in touch <span class="arrow"></span></a>
+          <a href="/contact" class="cta-button">Get in touch <span class="arrow"></span></a>
         </div>
         <div class="cta-blur-overlay"></div>
         <div class="cta-image"><img src="img/Rectangle 5192.webp" alt="UX Design" /></div>

@@ -2827,8 +2827,8 @@ body {
 }
 
 .innovation-badge-exact span {
-  color: #624AB2;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 200;
   font-style: italic;
 }
 
@@ -5015,8 +5015,8 @@ body {
   }
 
   .innovation-badge-exact span {
-    color: #624AB2;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 200;
     font-style: italic;
   }
 
@@ -10926,5 +10926,27 @@ h5 {
     color: #c4a8ff !important;
     font-weight: 600 !important;
     font-style: normal !important;
+  }
+}
+
+/* ── Badge text: desktop = long (white), mobile = short (purple spans) ── */
+.badge-mobile { display: none; }
+.badge-desktop span { color: #ffffff !important; font-weight: 400 !important; }
+@media (max-width: 767px) {
+  .badge-desktop { display: none !important; }
+  .badge-mobile  { display: inline; }
+}
+
+/* ── Desktop navbar active link indicator ── */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px !important;
+    text-decoration: none !important;
+  }
+  .navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    border-bottom-color: #a78bfa !important;
+    text-decoration: none !important;
   }
 }

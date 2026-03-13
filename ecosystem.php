@@ -96,6 +96,14 @@ $currentPage  = 'ecosystem';
         }
         .eco-acc-header { padding: 16px !important; font-size: 1.05rem !important; }
         .eco-acc-body { padding: 0 16px 16px !important; }
+
+        /* Prevent hover icon size change on mobile tap */
+        .service-card:nth-child(1):hover .service-icon img,
+        .service-card:nth-child(2):hover .service-icon img,
+        .service-card:nth-child(3):hover .service-icon img {
+          width: 40px !important;
+          height: 40px !important;
+        }
       }
     </style>
   </head>
@@ -108,7 +116,10 @@ $currentPage  = 'ecosystem';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Ecosystem</h1>
-      <div class="innovation-badge-exact">Learn, <span>Grow</span>, Design <span>Better</span></div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">Our ecosystem connects learning, resources, and community in one unified space.<br>From UX Shop to UX Academy and UX Community, we empower designers at every stage.</span>
+        <span class="badge-mobile">Learn, <span>Grow</span>, Design <span>Better</span></span>
+      </div>
     </section>
 
     <h2 class="ux-title" style="margin-top: 50px;">Expand Your Experience With <span class="highlight"> UX Pacific </span></h2>

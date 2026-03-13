@@ -65,7 +65,7 @@ $currentPage  = 'home';
       <p class="ux-description">
         We're a creative UX/UI design studio passionate about building human-centered digital products that inspire, engage, and perform.
       </p>
-      <a class="view-more" href="about.php"> View More &rarr; </a>
+      <a class="view-more" href="/about"> View More &rarr; </a>
       <br />
     </div>
 
@@ -158,7 +158,7 @@ $currentPage  = 'home';
         <div class="col-6 col-md-3"><div class="service-pill-box">Mobile, SaaS &amp; eCommerce UX</div></div>
         <div class="col-6 col-md-3"><div class="service-pill-box">Emerging Tech UX</div></div>
         <div class="col-6 col-md-3"><div class="service-pill-box">UX Content </div></div>
-        <div class="col-6 col-md-3 d-none d-md-block"><div class="text-center"><a class="view-more" href="service.php"> View More &rarr; </a></div></div>
+        <div class="col-6 col-md-3 d-none d-md-block"><div class="text-center"><a class="view-more" href="/service"> View More &rarr; </a></div></div>
         <div class="col-6 d-md-none"><div class="service-pill-box">Brand &amp; Visual Design</div></div>
       </div>
     </div>
@@ -176,7 +176,7 @@ $currentPage  = 'home';
       <div class="project-text">
         <h3 id="project-title">Case Study of Survey Pacific</h3>
         <p class="mb-0" id="project-desc">We revamped the website UI/UX through deep heuristic evaluation and competitive benchmarking.</p>
-        <a class="cta-button" href="work.php" style="width:175px;height:42px;text-decoration:none;margin-top:25px;">View Details <span class="arrow"> </span></a>
+        <a class="cta-button" href="/work" style="width:175px;height:42px;text-decoration:none;margin-top:25px;">View Details <span class="arrow"> </span></a>
       </div>
       <div class="project-slider">
         <div class="main-slide">
@@ -291,7 +291,7 @@ $currentPage  = 'home';
         <div class="cta-text">
           <h1>Start your <span> UI/UX </span> journey with <br /><span class="highlight"> UXPacific Team </span></h1>
           <p class="mt-4 mb-4">Build your site effortlessly and showcase your work with confidence.<br />Ready to stand out? Get started today!</p>
-          <a class="cta-button" href="contact.php">Get in touch <span class="arrow"> </span></a>
+          <a class="cta-button" href="/contact">Get in touch <span class="arrow"> </span></a>
         </div>
         <div class="cta-blur-overlay"></div>
         <div class="cta-image"><img alt="UX Design" src="img/Rectangle 5192.webp" /></div>
@@ -320,7 +320,7 @@ $currentPage  = 'home';
           <div class="faq-right">
             <h2>Frequently Asked <span> Questions? </span></h2>
             <p>Have questions? We&rsquo;ve gathered answers to questions people ask us all the time (yes, even the weird ones!). Still stumped? Drop us a line. We love a good question!</p>
-            <div><a class="faq-link" href="faq.php"> View Details &rarr; </a></div>
+            <div><a class="faq-link" href="/faq"> View Details &rarr; </a></div>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
     <div class="row" style="margin-top: 100px;">
       <div class="col-md-5">
         <div class="footer-logo">
-          <a href="index.php">
+          <a href="<?= BASE_URL ?>/">
             <img src="img/LOGO.png" width="200" alt="UX Pacific Logo" />
           </a>
         </div>
@@ -23,18 +23,18 @@
       <div class="col-md-2 col-3">
         <h4 class="ft_link">Quick Links</h4>
         <ul class="q_link">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About Us</a></li>
-          <li><a href="service.php">Services</a></li>
-          <li><a href="work.php">Work</a></li>
-          <li><a href="ecosystem.php">Ecosystem</a></li>
+          <li><a href="<?= BASE_URL ?>/">Home</a></li>
+          <li><a href="<?= BASE_URL ?>/about">About Us</a></li>
+          <li><a href="<?= BASE_URL ?>/service">Services</a></li>
+          <li><a href="<?= BASE_URL ?>/work">Work</a></li>
+          <li><a href="<?= BASE_URL ?>/ecosystem">Ecosystem</a></li>
         </ul>
       </div>
       <div class="col-md-2 col-3">
         <h4 class="ft_link">Support</h4>
         <ul class="q_link">
-          <li><a href="contact.php">Let's Talk</a></li>
-          <li><a href="faq.php">FAQs</a></li>
+          <li><a href="<?= BASE_URL ?>/contact">Let's Talk</a></li>
+          <li><a href="<?= BASE_URL ?>/faq">FAQs</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -62,7 +62,7 @@
 
     <!-- Logo + tagline -->
     <div class="mf-brand">
-      <a href="index.php">
+      <a href="<?= BASE_URL ?>/">
         <img src="img/LOGO.png" alt="UX Pacific Logo" class="mf-logo" />
       </a>
       <p class="mf-tagline">Designing Experiences, Not Just Interfaces</p>
@@ -80,18 +80,18 @@
       <div class="mf-col">
         <h4 class="mf-heading">Quick Links</h4>
         <ul class="mf-list">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="about.php">About Us</a></li>
-          <li><a href="service.php">Services</a></li>
-          <li><a href="work.php">Work</a></li>
-          <li><a href="ecosystem.php">Ecosystem</a></li>
+          <li><a href="<?= BASE_URL ?>/">Home</a></li>
+          <li><a href="<?= BASE_URL ?>/about">About Us</a></li>
+          <li><a href="<?= BASE_URL ?>/service">Services</a></li>
+          <li><a href="<?= BASE_URL ?>/work">Work</a></li>
+          <li><a href="<?= BASE_URL ?>/ecosystem">Ecosystem</a></li>
         </ul>
       </div>
       <div class="mf-col">
         <h4 class="mf-heading">Support</h4>
         <ul class="mf-list">
-          <li><a href="contact.php">Let's Talk</a></li>
-          <li><a href="faq.php">FAQs</a></li>
+          <li><a href="<?= BASE_URL ?>/contact">Let's Talk</a></li>
+          <li><a href="<?= BASE_URL ?>/faq">FAQs</a></li>
         </ul>
       </div>
     </div>
@@ -124,9 +124,9 @@
         <p style="color:#e0e0e0">© 2025 UXPacific. All rights reserved.</p>
       </div>
       <div class="col col-md-6 footer-policies mb-0 mt-0" style="text-align:right">
-        <a href="privacy-policy.php">Privacy Policy</a> |
-        <a href="cookies-privacy.php">Cookie Policy</a> |
-        <a href="term-condition.php">Terms &amp; Conditions</a>
+        <a href="<?= BASE_URL ?>/privacy-policy">Privacy Policy</a> |
+        <a href="<?= BASE_URL ?>/cookies-privacy">Cookie Policy</a> |
+        <a href="<?= BASE_URL ?>/term-condition">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
@@ -137,9 +137,9 @@
         <p style="color:#e0e0e0">© 2025 UXPacific. All rights reserved.</p>
       </div>
       <div class="col-12 col-md-6 footer-policies mb-0 mt-0 order-1 order-md-2 text-center text-md-end d-flex justify-content-center justify-content-md-end">
-        <a href="privacy-policy.php">Privacy Policy</a> |
-        <a href="cookies-privacy.php">Cookie Policy</a> |
-        <a href="term-condition.php">Terms &amp; Conditions</a>
+        <a href="<?= BASE_URL ?>/privacy-policy">Privacy Policy</a> |
+        <a href="<?= BASE_URL ?>/cookies-privacy">Cookie Policy</a> |
+        <a href="<?= BASE_URL ?>/term-condition">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>

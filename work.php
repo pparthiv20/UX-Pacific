@@ -56,7 +56,10 @@ $currentPage  = 'work';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Work</h1>
-      <div class="innovation-badge-exact">Real <span>Work</span>, Real <span>Results</span></div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">From live projects to powerful case studies and thought-provoking blogs.<br>See how strategy, creativity, and research turn into real results.</span>
+        <span class="badge-mobile">Real <span>Work</span>, Real <span>Results</span></span>
+      </div>
     </section>
 
     <h2 class="ux-title" style="margin-top:50px;">A Glimpse Into Our <span class="highlight"> Design Thinking </span></h2>
@@ -155,7 +158,7 @@ $currentPage  = 'work';
         <div class="cta-text cta-text--padded">
           <h2>Start your <span>UI/UX</span> journey with <br /><span class="highlight">UXPacific Team</span></h2>
           <p class="mt-4 mb-4 cta-desc">Build your site effortlessly and showcase your work with confidence.<br />Ready to stand out? Get started today!</p>
-          <a href="contact.php" class="cta-button cta-button--wide">Get in touch <span class="arrow"></span></a>
+          <a href="/contact" class="cta-button cta-button--wide">Get in touch <span class="arrow"></span></a>
         </div>
         <div class="cta-blur-overlay"></div>
         <div class="cta-image"><img src="img/Rectangle 5192.webp" alt="UX designer working on a digital product" /></div>

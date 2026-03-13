@@ -27,7 +27,7 @@ http_response_code(404);
   </head>
   <body>
     <main class="error-page" role="main">
-      <a href="index.php">
+      <a href="/">
         <img src="img/LOGO.png" alt="UX Pacific Logo" class="error-logo" />
       </a>
 
@@ -39,21 +39,21 @@ http_response_code(404);
       </p>
 
       <div class="error-actions">
-        <a href="index.php" class="btn-home">
+        <a href="/" class="btn-home">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 2 8v6a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V11h2v3a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.146-.354L14 6.5V3a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.793L8.354 1.146z"/>
           </svg>
           Back to Home
         </a>
-        <a href="contact.php" class="btn-contact">Contact Us</a>
+        <a href="/contact" class="btn-contact">Contact Us</a>
       </div>
 
       <nav class="quick-links" aria-label="Quick navigation">
-        <a href="about.php">About</a>
-        <a href="services.php">Services</a>
-        <a href="work.php">Work</a>
-        <a href="ecosystem.php">Ecosystem</a>
-        <a href="faq.php">FAQ</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/work">Work</a>
+        <a href="/ecosystem">Ecosystem</a>
+        <a href="/faq">FAQ</a>
       </nav>
     </main>
   </body>

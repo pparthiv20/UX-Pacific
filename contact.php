@@ -97,7 +97,10 @@ $currentPage  = 'contact';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Let's Talk</h1>
-      <div class="innovation-badge-exact">Let's <span>Build</span> Together</div>
+      <div class="innovation-badge-exact">
+        <span class="badge-desktop">Connect with <span>Us</span> for a <span>Better Future</span></span>
+        <span class="badge-mobile">Let's <span>Build</span> Together</span>
+      </div>
     </section>
 
     <main>
@@ -168,7 +171,7 @@ $currentPage  = 'contact';
             <div class="contact-footer">
               <label class="contact-checkbox">
                 <input type="checkbox" id="terms" name="terms" required>
-                <span>I Agree to <a href="term-condition.php" class="contact-link">Terms &amp; Conditions</a> of UX Pacific</span>
+                <span>I Agree to <a href="/term-condition" class="contact-link">Terms &amp; Conditions</a> of UX Pacific</span>
               </label>
             </div>
             <button type="submit" class="contact-submit-btn submit-btn">Send Message</button>
