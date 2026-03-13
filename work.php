@@ -56,10 +56,7 @@ $currentPage  = 'work';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Work</h1>
-      <div class="innovation-badge-exact">
-        From live projects to powerful case studies and thought-provoking blogs.<br>
-        See how strategy, creativity, and research turn into real results.
-      </div>
+      <div class="innovation-badge-exact">Real <span>Work</span>, Real <span>Results</span></div>
     </section>
 
     <h2 class="ux-title" style="margin-top:50px;">A Glimpse Into Our <span class="highlight"> Design Thinking </span></h2>

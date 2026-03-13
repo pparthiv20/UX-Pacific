@@ -97,7 +97,7 @@ $currentPage  = 'contact';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Let's Talk</h1>
-      <div class="innovation-badge-exact">Connect with <span>Us</span> for <span>Better Future</span></div>
+      <div class="innovation-badge-exact">Let's <span>Build</span> Together</div>
     </section>
 
     <main>

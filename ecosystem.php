@@ -108,10 +108,7 @@ $currentPage  = 'ecosystem';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Ecosystem</h1>
-      <div class="innovation-badge-exact">
-        Our ecosystem connects learning, resources, and community in one unified space.<br>
-        From UX Shop to UX Academy and UX Community, we empower designers at every stage.
-      </div>
+      <div class="innovation-badge-exact">Learn, <span>Grow</span>, Design <span>Better</span></div>
     </section>
 
     <h2 class="ux-title" style="margin-top: 50px;">Expand Your Experience With <span class="highlight"> UX Pacific </span></h2>

@@ -72,10 +72,7 @@ $currentPage  = 'service';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>Services</h1>
-      <div class="innovation-badge-exact">
-       We design user-focused digital solutions that combine strategy, creativity, and research.<br>
-        From UI to brand strategy, every service is built to deliver real results.
-      </div>
+      <div class="innovation-badge-exact">Design That <span>Delivers</span> Real <span>Results</span></div>
     </section>
 
 

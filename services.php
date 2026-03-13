@@ -19,10 +19,7 @@ $currentPage  = 'services';
     <section class="about-header">
       <div class="gallery-container"><img src="img/bg_ani.gif" class="img1" alt="Abstract background animation" /></div>
       <h1>Services</h1>
-      <div class="innovation-badge-exact">
-        We design user-focused digital solutions that combine strategy, creativity, and research.<br>
-        From UI to brand strategy, every service is built to deliver real results.
-      </div>
+      <div class="innovation-badge-exact">Design That <span>Delivers</span> Real <span>Results</span></div>
     </section>
 
     <!-- <h2 class="title" style="margin-top: 50px;">Design that simply <em>makes sense</em></h2> -->

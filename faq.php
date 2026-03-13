@@ -21,10 +21,7 @@ $currentPage  = 'faq';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>FAQ</h1>
-      <div class="innovation-badge-exact">
-        We've gathered answers to questions we're asked all the time.<br>
-        Still stumped? Drop us a line we love a good question!
-      </div>
+      <div class="innovation-badge-exact">Every <span>Question</span>, Clearly <span>Answered</span></div>
     </section>
 
     <main class="container py-5">

@@ -151,10 +151,7 @@ $currentPage  = 'about';
       </video>
       <div class="header-bg-overlay"></div>
       <h1>About Us</h1>
-      <div class="innovation-badge-exact">
-        We are a strategic design partner focused on creating meaningful digital experiences.<br>
-        Driven by purpose and empathy, we craft solutions that deliver real impact.
-      </div>
+      <div class="innovation-badge-exact">Design with <span>Purpose</span> &amp; <span>Empathy</span></div>
     </section>
 
     <!-- <h2 class="ux-title" style="margin-top: 50px;">Where Strategy Meets <span class="highlight"> Stunning </span> Design</h2> -->
@@ -164,7 +161,7 @@ $currentPage  = 'about';
     <div class="ab-story-section">
       <div class="ab-story-grid">
         <div class="ab-story-image">
-          <img src="img/Rectangle 5208.webp" alt="Our Story  UX Pacific team at work" loading="lazy" />
+          <img src="img/aboutus.webp" alt="Our Story  UX Pacific team at work" loading="lazy" />
         </div>
         <div class="ab-story-content">
           <h2 class="ab-title">Born from a Belief<br />in <em>Better Design</em></h2>
