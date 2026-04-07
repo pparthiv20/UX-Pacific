@@ -26,13 +26,13 @@ $currentPage  = 'term-condition';
       </h2>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">1. Company Overview</h2>
         <p class="f20 mt-4">UX Pacific is a user experience design consultancy specializing in UI/UX design, UX audits, research, and digital product design. All content, design materials, and intellectual property on this website are owned by or licensed to UX Pacific.</p>
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">2. Use of Website</h2>
         <p class="f20 mt-4">You agree to use the website for lawful purposes only and in a way that does not infringe the rights or restrict the use of others. You must not:</p>
         <ul>
@@ -43,7 +43,7 @@ $currentPage  = 'term-condition';
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">3. Intellectual Property</h2>
         <p class="f20 mt-4">All logos, graphics, text, UI elements, and creative content are the intellectual property of UX Pacific unless otherwise stated. You may not:</p>
         <ul>
@@ -53,7 +53,7 @@ $currentPage  = 'term-condition';
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">4. User Submissions</h2>
         <p class="f20 mt-4">By submitting forms, portfolios, or any data to UX Pacific, you agree:</p>
         <ul>
@@ -65,13 +65,13 @@ $currentPage  = 'term-condition';
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">5. Third-Party Links</h2>
         <p class="f20 mt-4">Our website may include links to third-party sites. UX Pacific has no control over these websites and is not responsible for their content, terms, or policies.</p>
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">6. Limitation of Liability</h2>
         <p class="f20">UX Pacific will not be held liable for any damages arising from:</p>
         <ul>
@@ -83,19 +83,19 @@ $currentPage  = 'term-condition';
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">7. Modifications</h2>
         <p class="f20 mt-4">We may update these terms at any time without prior notice. Continued use of the site indicates your acceptance of the updated Terms and Conditions.</p>
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">8. Governing Law</h2>
         <p class="f20 mt-4">These terms are governed by the laws of India. Any disputes shall be resolved in the courts located in Ahmedabad, Gujarat.</p>
       </div>
       <hr class="section-divider" />
 
-      <div class="section mt-5 mb-5">
+      <div class="section mt-3 mb-3">
         <h2 class="f24">9. Contact Information</h2>
         <p class="f20 mt-4">For questions or concerns about these terms, please contact us at:</p>
         <p class="contact-email">&#128231; hello@uxpacific.com</p>

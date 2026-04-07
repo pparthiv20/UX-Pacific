@@ -107,7 +107,7 @@ $currentPage  = 'home';
 
     <div class="section-title" style="margin-top: 50px">
       <h3 class="ux-subtitle">Our Services <span class="ux-line"> </span></h3>
-      <h2>Design Solutions That Put <span> User </span> First</h2>
+      <h2>Design Solutions That Put <span> Users </span> First</h2>
       <p class="ux-description">From sleek interfaces to seamless user flows, our portfolio reflects our commitment to crafting digital experiences that work beautifully.</p>
     </div>
     <style>

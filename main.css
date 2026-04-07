@@ -3665,7 +3665,7 @@ body {
 }
 
 .f20 {
-  font-size: 20px !important;
+  font-size: 16px !important;
 }
 
 .f24 {
@@ -3674,8 +3674,8 @@ body {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  line-height: 32px;
-  padding: 24px;
+  line-height: 3px;
+    padding: 10px;
 }
 
 .p-20 {
@@ -4247,8 +4247,8 @@ body {
 .q_link li a {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 200;
-  font-size: 13px;
+      font-weight: 400;
+    font-size: 16px;
   line-height: 24px;
   color: #e0e0e0;
   text-decoration: none;
@@ -4257,8 +4257,8 @@ body {
 .f_cnt {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 200;
-  font-size: 13px;
+    font-weight: 400;
+    font-size: 16px;
   line-height: 24px;
   color: #e0e0e0;
   text-decoration: none;
@@ -8013,8 +8013,8 @@ body {
   .section li {
     font-family: 'Inter';
     font-weight: 300;
-    font-size: 20px;
-    line-height: 28px;
+        font-size: 16px;
+        line-height: 15px;
     color: #E0E0E0 !important;
   }
 
@@ -8130,11 +8130,11 @@ body {
   }
 
   .terms-desc {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 28px;
-    color: #bbbbbb;
-    margin-bottom: 56px;
+   font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 27px;
   }
 
   .section {
@@ -8155,7 +8155,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 15px;
     color: #E0E0E0 !important;
   }
 
